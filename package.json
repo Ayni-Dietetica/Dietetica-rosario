@@ -1,0 +1,12 @@
+{
+  "name": "ayni-dietetica",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "crear-usuarios": "node --env-file=.env scripts/crear-usuarios.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0"
+  }
+}
