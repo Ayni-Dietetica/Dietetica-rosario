@@ -4,8 +4,8 @@ Guía para trabajar en este repo. Leela antes de hacer cualquier cambio.
 
 ## Aislamiento
 
-- Proyecto **completamente aislado**. No tiene relación con Sinexia ni con
-  Caderamen: no los toques, no los referencies, no copies código ni datos de ahí.
+- Proyecto **completamente aislado** de cualquier otro proyecto o cliente: no
+  los toques, no los referencies, no copies código ni datos de otros proyectos.
 - Único proyecto Supabase permitido: **`rxgcpqyruqpxqsjluzqc`**
   (`https://rxgcpqyruqpxqsjluzqc.supabase.co`).
 - El esquema real de la base es la fuente de verdad (no hay `.sql` en el repo).
