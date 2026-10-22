@@ -1,7 +1,9 @@
 import { createClient } from '@supabase/supabase-js';
 
-const url = import.meta.env.VITE_SUPABASE_URL;
-const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+// Valores públicos del proyecto (URL y publishable key, no son secretos: la
+// seguridad la dan el login y la RLS). Las variables VITE_* los reemplazan.
+const url = import.meta.env.VITE_SUPABASE_URL || 'https://rxgcpqyruqpxqsjluzqc.supabase.co';
+const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'sb_publishable_t6rFhQX5Z7-GvNv7hEfCcQ_M7Az3xE0';
 
 export const configFaltante = !url || !anonKey;
 

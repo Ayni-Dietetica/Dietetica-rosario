@@ -5,13 +5,14 @@ el manager. Vite + React + Tailwind + Supabase.
 
 ## Puesta en marcha
 
-1. `cp .env.example .env` y completar:
-   - `VITE_SUPABASE_URL=https://rxgcpqyruqpxqsjluzqc.supabase.co`
-   - `VITE_SUPABASE_ANON_KEY=` la publishable key del proyecto
-     (Supabase → Project Settings → API Keys). **Nunca la service_role.**
+1. La URL y la publishable key del proyecto ya vienen por defecto en
+   `src/lib/supabase.js` (son públicas). Para usar otras, copiar
+   `.env.example` a `.env` y completarlo. **Nunca la service_role.**
 2. `npm install`
-3. `npm run dev` para probar, o `npm run build` para generar `dist/` y
-   publicarlo en cualquier hosting estático.
+3. `npm run dev` para probar, o `npm run build` para generar `dist/`.
+
+Producción: https://dietetica-rosario.vercel.app (Vercel, se publica solo con
+cada cambio en `main`).
 
 ## Login
 

@@ -18,7 +18,9 @@ Guía para trabajar en este repo. Leela antes de hacer cualquier cambio.
 - **No crear usuarios ni tocar `auth.users` ni `public.perfiles`.** Los usuarios
   ya existen.
 - **Nunca usar la service_role key.** La app usa solo la URL y la anon /
-  publishable key, desde `VITE_SUPABASE_URL` y `VITE_SUPABASE_ANON_KEY`.
+  publishable key. Están como valores por defecto en `src/lib/supabase.js`
+  (son públicas) y se pueden reemplazar con `VITE_SUPABASE_URL` y
+  `VITE_SUPABASE_ANON_KEY`. Ninguna otra clave va en el código.
 - Ventas, compras y stock **siempre por RPC**, nunca escribiendo directo en
   `ventas`, `venta_items`, `compras`, `lotes` ni `movimientos_stock`:
   - `registrar_venta(p_items jsonb, p_medio text, p_nota text)` — items
